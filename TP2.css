@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(244, 197, 248),rgb(205, 109, 199));
+    min-height: 300vh;
+    max-width: 2000px;
+    margin:0;
+    overflow-y: hidden;
+}
+
+header {
+    background-color: (244, 197, 248);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: (205, 109, 199);
+    color: #000000;
+    padding: 20px;
+    font-size:small;
+}
+p{
+    margin-top: 0%;
+}

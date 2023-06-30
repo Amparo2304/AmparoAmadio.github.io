@@ -1,0 +1,193 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+header{
+    height: 15vh;
+    background-image:url(https://i.pinimg.com/736x/82/f2/1d/82f21d4fab0141ec3bd035e01e39cb3b.jpg);
+    background-size: cover;
+}
+header img{
+    height: 50px;
+    margin-right: 10px;
+}
+.container ul li{ 
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "fuente";
+    letter-spacing: 3px;
+}
+.container a{
+    color: rgb(66, 0, 128);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.container a:hover{
+    background-color: #b48fee;
+    color: rgb(0, 0, 0); 
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height: 90px;
+}
+.container .btn-menu label{
+    color: #214f74;
+    font-size: 30px;
+    cursor: pointer;
+}
+.texto p{
+    margin-top: 10px;
+}
+@font-face{
+    font-family: fuente;
+    src:url(Fluence_DEMO[1].ttf);
+}
+.containercarrusel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.carrusel input{
+    visibility: hidden;
+    display: none;
+}
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+.buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(167, 136, 238);
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.9s;
+}
+.buttons label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.carrusel input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.carrusel input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.carrusel input:nth-child(3):checked ~ .buttons label:nth-child(3)
+{
+   opacity: 1;
+   scroll-margin: 1.2;
+   width: 40px; 
+}
+.content{
+    position: relative;
+    width: 300vw;
+    display: flex;
+    transition: 400ms ease-in-out; 
+}
+.primercarrusel,.segundocarrusel,.tercercarrusel{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primercarrusel{
+    background-color: white;
+}
+.segundocarrusel{
+    background-color: white;
+}
+.tercercarrusel{
+    background-color: white;
+}
+
+.carrusel input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+.carrusel input:nth-child(2):checked ~ .content{
+    left: -101vw;
+}
+.carrusel input:nth-child(3):checked ~ .content{
+    left: -201vw;
+}
+.content img{
+    height: 100%;
+    width: 45%;
+    margin-right: -60%;
+}
+h1{
+    margin-left: -30%;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+body span{
+    background-color: #b48fee;
+}
+#btn-th{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;  
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}

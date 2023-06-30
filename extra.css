@@ -1,0 +1,60 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    }
+header {
+    background-color: (244, 197, 248);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+.imagen{
+    width: 1600px;
+}
+body{
+    background-image: linear-gradient(rgb(244, 197, 248),rgb(205, 109, 199));
+}
+.container{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin-left: 20px;
+}
+footer{
+    background-color: (205, 109, 199);
+    margin-top: 50px;
+}
+footer img{
+    width: 30px;
+    justify-content: center;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 10px;  
+    justify-content: center;
+}
+.footer{
+    display: inline
+}
+.button{
+    min-width: 700px;
+    justify-content: right;
+}
+.button a{
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: all .4 ease-in-out;
+}
+p1{
+    margin-top: -0.5%;
+    color: rgb(80, 78, 78);
+}
